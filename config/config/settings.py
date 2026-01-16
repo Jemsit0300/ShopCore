@@ -26,9 +26,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'django_filters',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -113,8 +115,29 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
 
     #Searching and Filtering
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
         
+    'DEFAULT_THROTTLE_CLASSES': [
+        'product.throttles.UserThrottle',
+        'product.throttles.AnonThrottle',
+    ],
+
+    'DEFAULT_THROTTLE_RATES': {
+        # Genel
+        'user': '500/day',
+        'anon': '100/day',
+
+        # Order
+        'order_user': '20/day',
+        'order_anon': '5/day',
+
+        # Payment
+        'payment_user': '5/hour',
+    },
+
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10,
 }
 
 SPECTACULAR_SETTINGS  ={
@@ -129,3 +152,15 @@ SIMPLE_JWT = {
  }
 
 AUTH_USER_MODEL = 'login.CustomUser'
+
+
+
+INTERNAL_IPS = ['127.0.0.1']
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'product-cache',
+    }
+}
