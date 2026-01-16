@@ -1,222 +1,96 @@
-🛒 ShopCore API
+# ShopCore API
 
-ShopCore is a scalable e-commerce backend API built with Django REST Framework. The project is designed to evolve step‑by‑step from Junior+ to Mid‑level backend architecture, following real‑world e‑commerce requirements.
+Modern e‑commerce backend with Django REST Framework, JWT auth, cart/order flow, and production‑minded settings (security, caching, logging).
 
-⚠️ This project is under active development.
+## What’s Inside
+- Auth & Users: registration, JWT login/refresh, role-based perms (admin/user)
+- Products: CRUD, search/filter, cache on list, throttling
+- Cart: one cart per user, add/update/remove items, stock & quantity validation
+- Orders: build order from cart, stock decrease/restore, cancel flow, fake payment hook
+- Docs: Swagger/Redoc via drf-spectacular
+- Ops: custom exception handler, structured logging, security headers when DEBUG=False
 
-📌 Current Features
+## Tech Stack
+- Python 3.10, Django, Django REST Framework
+- Simple JWT, drf-spectacular, django-filter
+- SQLite (dev), LocMem cache (dev) — pluggable for Redis in prod
 
-🔐 Authentication & Users
-
-User registration system
-
-JWT Authentication (login / refresh)
-
-Authenticated user permissions
-
-📦 Products
-
-Product CRUD operations
-
-Admin‑only product management
-
-Filtering & search support
-
-🛒 Cart System (NEW)
-
-One cart per authenticated user
-
-Users can only access their own cart
-
-CartItem management (add / update / remove products)
-
-Quantity & stock validation
-
-Cascade delete support
-
-📚 API Docs
-
-Swagger UI
-
-Redoc
-
-🧱 Project Structure
-
-ShopCore/
-├── config/
-│   ├── manage.py
-│   ├── login/
-│   ├── product/
-│   ├── cart/
-│   └── config/
-├── requirements.txt
-├── README.md
-└── venv/
-
-🛠 Installation
-
+## Quickstart
+```bash
 git clone https://github.com/Jemsit0300/ShopCore.git
 cd ShopCore
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+cp .env.example .env  # doldur
 python manage.py migrate
-python manage.py createsuperuser
 python manage.py runserver
-
-📚 API Documentation
-
-Swagger UI:
-👉 http://localhost:8000/api/docs/
-
-Redoc:
-👉 http://localhost:8000/api/schema/redoc/
-
-🛒 Cart & CartItem System
-
-🗓️ Day 6 – Cart Model
-
-Purpose: Create a cart bound to the authenticated user
-
-Implemented
-
-Cart model
-
-user (FK → Custom User)
-
-created_at
-
-CartSerializer
-
-Cart create endpoint (authenticated users)
-
-Cart list endpoint (user sees only own cart)
-
-Security Checks
-
-JWT authentication required
-
-Users cannot access other users' carts
-
-🎯 Level impact: Junior+ → Mid threshold
-
-🗓️ Day 7 – CartItem Model & Serializer
-
-Purpose: Add / remove products from cart
-
-Implemented
-
-CartItem model
-
-cart (FK → Cart)
-
-product (FK → Product)
-
-quantity (default = 1)
-
-CartItemSerializer
-
-CartItem create endpoint
-
-CartItem list endpoint (cart detail)
-
-Security Checks
-
-Only cart owner can add products
-
-Quantity default works correctly
-
-🎯 Level impact: Mid
-
-🗓️ Day 8 – Quantity Update & Validation
-
-Purpose: Enforce correct quantity logic
-
-Implemented
-
-CartItem update endpoint (PUT / PATCH)
-
-Quantity validation rules:
-
-Quantity ≥ 1
-
-Quantity ≤ product stock
-
-Validation Checks
-
-Stock limit cannot be exceeded
-
-JWT authorization enforced
-
-🎯 Level impact: Mid
-
-🗓️ Day 9 – CartItem & Cart Delete
-
-Purpose: Complete cart lifecycle
-
-Implemented
-
-CartItem delete endpoint
-
-Cart delete endpoint (user‑owned only)
-
-Cascade delete: deleting cart removes cart items
-
-Security Checks
-
-Users cannot delete others' cart items
-
-JWT authentication enforced
-
-🎯 Level impact: Mid
-
-🗓️ Day 10 – Tests & Documentation
-
-Purpose: Stabilize & document the system
-
-Implemented
-
-Cart create / update / delete tests
-
-CartItem create / update / delete tests
-
-Swagger & Redoc verification
-
-README updated (this document)
-
-🎯 Level impact: Mid
-
-🧱 Technologies Used
-
-Python
-
-Django
-
-Django REST Framework
-
-Simple JWT
-
-drf-spectacular
-
-django-filter
-
-SQLite (development)
-
-🚧 Planned Features
-
-Order system
-
-Checkout flow
-
-User profile management
-
-Payment integration
-
-Docker support
-
-Redis & caching
-
-👨‍💻 Author
-
-Developed as a learning‑driven backend project to simulate real‑world e‑commerce systems and progress from Junior+ to Mid‑level backend development.
+```
+
+### .env example
+```
+SECRET_KEY=dev-secret
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
+CORS_ALLOWED_ORIGINS=http://127.0.0.1:8000,http://localhost:8000
+```
+
+## Authentication (JWT)
+- Login: `POST /Authentication/login/` → { access, refresh }
+- Refresh: `POST /Authentication/token/refresh/`
+- Header: `Authorization: Bearer <access>`
+- Protects cart, cart-items, orders, product write ops; product read is public.
+
+## Order & Payment Flow
+```
+[Add to cart] POST /api/cart-items/
+[Review cart] GET  /api/cart/
+[Place order] POST /api/orders/  # moves cart items -> order items, recalculates total
+[Payment hook] (stub/fake payment endpoint in order flow)
+[Order status] GET /api/orders/  # user sees own; admin sees all
+[Cancel order] POST /api/orders/{id}/cancel/  # restores stock
+```
+
+## API Docs
+- Swagger UI: http://127.0.0.1:8000/api/docs/
+- Redoc: http://127.0.0.1:8000/api/schema/redoc/
+
+## Performance
+- Product list caching (LocMem, 5 min)
+- Throttling (user/anon + order/payment specific buckets)
+- Query optimizations on cart/cart-items (select_related/prefetch_related)
+
+## Security
+- SECRET_KEY, DEBUG, ALLOWED_HOSTS, CORS from env
+- When DEBUG=False: HSTS, secure cookies, SSL redirect, XSS/NoSniff headers
+- JWT auth for write ops; role-based permissions; CORS configured via env
+
+## Error Handling
+Uniform error shape: `{ success: False, status, error, message, details }`
+- Validation → `error=validation_error`, details per field
+- Auth → `authentication_error`
+- 403 → `permission_denied`
+- 404 → `not_found`
+- Fallback 500 → `server_error`
+(Handler: product/exceptions.py)
+
+## Project Structure
+```
+ShopCore/
+├── config/            # Django project
+│   ├── config/        # settings/urls
+│   ├── login/         # auth app
+│   └── product/       # products, cart, orders, throttles, permissions
+├── requirements.txt
+└── README.md
+```
+
+## CI / Next Steps
+- Add Redis cache + Docker for prod
+- Add payment provider integration
+- Add metrics/health endpoints
+- Harden rate limits per endpoint group
+
+## Credits
+Built as a learning-oriented, production-aware e‑commerce API.
 

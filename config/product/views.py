@@ -1,26 +1,19 @@
-from rest_framework.viewsets import ModelViewSet
-from .serializers import CartSerializer, ProductSerializer, CartItemSerializer
-from .models import CartItem
-from .models import Cart, Product
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from django.db import models
-from .permission import IsAdminOrReadOnly, IsAdminOrOwner
-from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import filters
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from rest_framework import viewsets, permissions
-from .models import Order
-from .serializers import OrderCreateSerializer
-from rest_framework.decorators import action
-from rest_framework import status
-from django.db import transaction
-from .throttles import UserThrottle, AnonRateThrottle
-from product.throttles import OrderUserThrottle, OrderAnonThrottle, PaymentUserThrottle
 from django.core.cache import cache
+from django.db import models, transaction
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters, permissions, status, viewsets
+from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.response import Response
+from rest_framework.viewsets import ModelViewSet
+
+from .models import Cart, CartItem, Order, Product
+from .permission import IsAdminOrOwner, IsAdminOrReadOnly
+from .serializers import CartItemSerializer, CartSerializer, OrderCreateSerializer, ProductSerializer
+from .throttles import AnonRateThrottle, OrderAnonThrottle, OrderUserThrottle, PaymentUserThrottle, UserThrottle
 
 PRODUCT_LIST_CACHE_KEY = "product_list"
-PRODUCT_LIST_CACHE_TTL = 60 * 5  # 5 minutes
+PRODUCT_LIST_CACHE_TTL = 60 * 5
 
 
 
@@ -66,7 +59,7 @@ class CartViewSet(ModelViewSet):
     queryset = Cart.objects.all()
     serializer_class = CartSerializer
     permission_classes = [IsAuthenticated]
-    pagination_class = None  # Disable pagination for carts
+    pagination_class = None
 
     def get_queryset(self):
         return (
@@ -104,7 +97,6 @@ class OrderViewSet(viewsets.ModelViewSet):
     throttle_classes = [OrderUserThrottle, OrderAnonThrottle]
 
     def get_queryset(self):
-        # Admin tüm siparişleri görebilir, user sadece kendi siparişlerini
         if self.request.user.is_staff:
             return (
                 Order.objects.all()
@@ -152,13 +144,11 @@ class OrderViewSet(viewsets.ModelViewSet):
             )
         
         with transaction.atomic():
-            # Stoğu geri ver
             for order_item in order.order_items.select_related('product'):
                 product = order_item.product
                 product.stock = models.F('stock') + order_item.quantity
                 product.save(update_fields=['stock'])
             
-            # Siparişi iptal et
             order.status = Order.StatusChoices.CANCELED
             order.save()
         

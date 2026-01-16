@@ -1,0 +1,366 @@
+2026-01-16 12:21:50,358 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:21:54,801 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 12:21:55,571 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:21:56,919 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 12:21:57,669 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:22:45,860 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:23:38,192 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:23:45,787 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 301 0
+2026-01-16 12:23:45,794 [INFO] django.server: code 400, message Bad request version ('ü|nk')
+2026-01-16 12:23:45,795 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:45,797 [INFO] django.server: code 400, message Bad request version ('wK¸ùlÕ¤$\x889\x13³\x03!d±\x9fI\x8a\x9a\x8ex\x9a©r²ÎÖy\x16â')
+2026-01-16 12:23:45,797 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:47,408 [INFO] django.server: code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00')
+2026-01-16 12:23:47,409 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:47,411 [INFO] django.server: code 400, message Bad request version (',1ù¨òYq,ÝHï\x97')
+2026-01-16 12:23:47,411 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:47,414 [INFO] django.server: code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x9a\x9a\x00\x00\x00')
+2026-01-16 12:23:47,414 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:47,415 [INFO] django.server: code 400, message Bad request version ("ÒL}0,^¾Ø¤s{/Gqv\x96º9fX1lã'¡¸N~ÈÄVAr]¬\x9f+\x10G(µMÜ\x8bf=\x96\x9e\x92DP\x139{\x8c\x9c\x08¥j")
+2026-01-16 12:23:47,416 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:47,417 [INFO] django.server: code 400, message Bad request version ('TÉ¹')
+2026-01-16 12:23:47,417 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:23:47,418 [INFO] django.server: code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+2026-01-16 12:23:47,418 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:10,032 [INFO] django.server: code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03[s[eÑ\x84')
+2026-01-16 12:24:10,033 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:10,035 [INFO] django.server: code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03\x82|\x8bì\x99¯ÖzÅs\x06ì÷\x1ad*N),ÅjA\x9föý\x87ÿE\x8dã\x00d')
+2026-01-16 12:24:10,035 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:10,038 [INFO] django.server: code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x80]ï½Î\x83')
+2026-01-16 12:24:10,038 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:10,039 [INFO] django.server: code 400, message Bad request version ('\x06K\x0fâ\x08PÛÌªêv\x81&8\x9ef\x9fx\x8b¸º¦ÎÏi\x88\x87`\\')
+2026-01-16 12:24:10,039 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:10,041 [INFO] django.server: code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063úú\x00\x00\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+2026-01-16 12:24:10,042 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:10,043 [INFO] django.server: code 400, message Bad request version ('WØôÙn4¥âyº\x91èQqô{Á')
+2026-01-16 12:24:10,043 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:24:39,147 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:26:54,048 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:27:30,683 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:27:32,318 [INFO] django.server: code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x00')
+2026-01-16 12:27:32,319 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:32,321 [INFO] django.server: code 400, message Bad request version ('Ã}')
+2026-01-16 12:27:32,322 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:32,325 [INFO] django.server: code 400, message Bad request version ('BØ@¯e¹ZHõ®Å\x04±Ó\x82QÝZ:ýåe\x9fa\x87â¤É\x9c\x97\x9a¼X\x03U`\x94j@\x98/ÜEá\x94w\x9f\x014á')
+2026-01-16 12:27:32,325 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:32,326 [INFO] django.server: code 400, message Bad request version ('à÷T\xadç7Kk]T\x87\x7fæw\x19x\x07[µC\x861×6\x00\x12JÁâ@hõ\x03tÓ\xadÉYhÛz{¦Ð')
+2026-01-16 12:27:32,327 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:32,328 [INFO] django.server: code 400, message Bad request version ('Ò\x88ÁÑ4\x9aÉ/')
+2026-01-16 12:27:32,328 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:32,331 [INFO] django.server: code 400, message Bad request version ('\x12\x04p\x87')
+2026-01-16 12:27:32,331 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:34,955 [INFO] django.server: code 400, message Bad request version ('ê1\x03ïfn\x1bcu®÷5tcsW2ËÓ\x13´uòi}\x97)X\x82i¯Ì\x97(¢¿·(7Áê|(')
+2026-01-16 12:27:34,955 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:34,957 [INFO] django.server: code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03uÜ\x03¬ô×\x9f\x97\x95\x06\x9c¹`AÌ^')
+2026-01-16 12:27:34,957 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:36,421 [INFO] django.server: code 400, message Bad request version ('ÅmFcBS\x13&\x07\x80\x9fó\x18!7Ká\x84±<¸\x9ciÐK²(\x1364\x03?r\x12\x16ÅÂ»3°S7G\x9b0\x86\x8b\x81KhÄoûl¢Ú!¥')
+2026-01-16 12:27:36,422 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:36,424 [INFO] django.server: code 400, message Bad request version ('Äwp1V\x96V^c\x10\x12:;Ly§´ì¿ÍeUÑ\x12mBG]\x88\x8cOé\x98¤F\x06<')
+2026-01-16 12:27:36,424 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:36,428 [INFO] django.server: code 400, message Bad request version ('>\x94h¥&^')
+2026-01-16 12:27:36,429 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:36,430 [INFO] django.server: code 400, message Bad request version ('IU\x8a2\x05G0À\x86éJbÍ')
+2026-01-16 12:27:36,430 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:36,431 [INFO] django.server: code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ªª\x00\x00\x00\x17\x00\x00\x00#\x00\x00\x00')
+2026-01-16 12:27:36,432 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:27:36,433 [INFO] django.server: code 400, message Bad request version ('\x93ýÆ¶')
+2026-01-16 12:27:36,434 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:13,302 [INFO] django.server: code 400, message Bad request version ('#\x94¾!')
+2026-01-16 12:28:13,302 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:13,304 [INFO] django.server: code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+2026-01-16 12:28:13,305 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:13,305 [INFO] django.server: code 400, message Bad request version ('\x92A\x91C%\x963\x94ÛÓl¡\x98¢\x91¸Þ\x80ªÑd\x91êeõ\x94î2\x82|\x07\x12!\x9cGT9gaüz\x8fÖ0¢\x9a')
+2026-01-16 12:28:13,306 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:13,307 [INFO] django.server: code 400, message Bad request version ('\x9c?ÄØavú@ºä3Õù_:Y\x14¶*y×ýp\x00')
+2026-01-16 12:28:13,307 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:20,839 [INFO] django.server: code 400, message Bad request version ('\x86Ó\x94¤Ê".')
+2026-01-16 12:28:20,840 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:20,841 [INFO] django.server: code 400, message Bad request version ('0³é·ÔÀ\x91v\x8aÇs\x8a]±\x81.D\x07¬D(#¸¥o')
+2026-01-16 12:28:20,841 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:20,842 [INFO] django.server: code 400, message Bad request version ("Pwÿ\x9cbâÇ\x16[¶R'BM")
+2026-01-16 12:28:20,842 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:20,843 [INFO] django.server: code 400, message Bad request version ('3nêK\x05M')
+2026-01-16 12:28:20,844 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:26,276 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:28:26,309 [WARNING] django.request: Not Found: /
+2026-01-16 12:28:26,310 [WARNING] django.server: "GET / HTTP/1.1" 404 17276
+2026-01-16 12:28:26,360 [INFO] django.server: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2026-01-16 12:28:26,369 [INFO] django.server: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2026-01-16 12:28:26,370 [INFO] django.server: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2026-01-16 12:28:26,416 [INFO] django.server: "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+2026-01-16 12:28:26,522 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:28:26,537 [WARNING] django.request: Not Found: /favicon.ico
+2026-01-16 12:28:26,538 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 17338
+2026-01-16 12:28:34,963 [INFO] django.server: code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00\x17\x00\x00\x00')
+2026-01-16 12:28:34,963 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:28:34,965 [INFO] django.server: code 400, message Bad request version ('½C\x9c')
+2026-01-16 12:28:34,965 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:29:27,267 [INFO] django.server: code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00')
+2026-01-16 12:29:27,267 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:29:27,269 [INFO] django.server: code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03')
+2026-01-16 12:29:27,269 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:29:34,969 [INFO] django.server: code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93jj\x00\x00\x00')
+2026-01-16 12:29:34,969 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:29:34,971 [INFO] django.server: code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+2026-01-16 12:29:34,971 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:30:58,973 [INFO] django.server: code 400, message Bad request version ('Ybì¡õ\x00')
+2026-01-16 12:30:58,974 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:30:58,976 [INFO] django.server: code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+2026-01-16 12:30:58,976 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:31:37,105 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:31:49,020 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 12:31:49,067 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 12:31:49,917 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:31:49,952 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:31:55,297 [INFO] django.server: code 400, message Bad request version ('eÀÐA±\x18xÑÐUp²\x97+\x07mBkw#\x9co\x8aÓ¨\x82fÌìË5±ÄsX%/¹G')
+2026-01-16 12:31:55,298 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:31:55,300 [INFO] django.server: code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÚÚ\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x12\x00\x00\x00#\x00\x00\x003\x04ï\x04í')
+2026-01-16 12:31:55,301 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:31:56,910 [INFO] django.server: code 400, message Bad request version ('\x83õ£')
+2026-01-16 12:31:56,910 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:31:56,913 [INFO] django.server: code 400, message Bad request version ('!;')
+2026-01-16 12:31:56,913 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:31:56,914 [INFO] django.server: code 400, message Bad request version ('7«kw\x05t')
+2026-01-16 12:31:56,915 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:31:56,915 [INFO] django.server: code 400, message Bad request version ('xùïxFò*úßxw¢I¾é\x18í5Lìä\x9f:\x8eî\x12¦\x05]\x00Ð\x12ëÝöÎ&ÊWàP{xÄ÷0°É3\x83l\x18yx¸')
+2026-01-16 12:31:56,916 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 12:32:01,931 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:32:53,290 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 12:32:53,955 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:33:32,530 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 12:33:33,216 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:34:52,056 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:35:12,470 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:35:19,963 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:35:29,077 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:29,103 [WARNING] django.request: Not Found: /
+2026-01-16 12:35:29,104 [WARNING] django.server: "GET / HTTP/1.1" 404 17276
+2026-01-16 12:35:29,144 [INFO] django.server: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 30101
+2026-01-16 12:35:29,145 [INFO] django.server: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14879
+2026-01-16 12:35:29,146 [INFO] django.server: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+2026-01-16 12:35:29,196 [INFO] django.server: "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4700
+2026-01-16 12:35:29,327 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:29,342 [WARNING] django.request: Not Found: /favicon.ico
+2026-01-16 12:35:29,343 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 17338
+2026-01-16 12:35:37,129 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:37,143 [INFO] django.server: "GET /api/docs HTTP/1.1" 301 0
+2026-01-16 12:35:37,381 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:37,395 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18851
+2026-01-16 12:35:37,916 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:37,930 [INFO] django.server: "GET /api/schema/ HTTP/1.1" 200 66343
+2026-01-16 12:35:50,568 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:50,583 [INFO] django.server: "GET /api/products/ HTTP/1.1" 200 246
+2026-01-16 12:35:50,800 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=71f55b430780493a99f3cf7082928f3f HTTP/1.1" 200 10527
+2026-01-16 12:35:53,720 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:35:53,735 [INFO] django.server: "GET /api/products/ HTTP/1.1" 200 246
+2026-01-16 12:35:53,954 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=07387f25bf544fc9b326b50121f2a783 HTTP/1.1" 200 10531
+2026-01-16 12:36:31,999 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:37:08,356 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 12:37:11,608 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:37:11,632 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18851
+2026-01-16 12:37:11,939 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:37:11,953 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18849
+2026-01-16 12:37:12,109 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:37:12,125 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18849
+2026-01-16 12:37:12,433 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:37:12,447 [INFO] django.server: "GET /api/schema/ HTTP/1.1" 200 66343
+2026-01-16 12:37:21,563 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:37:21,578 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18849
+2026-01-16 12:37:21,797 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 12:37:21,813 [INFO] django.server: "GET /api/schema/ HTTP/1.1" 200 66343
+2026-01-16 12:52:05,571 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:31:25,203 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:31:34,171 [INFO] django.server: code 400, message Bad request version ('õJBZ.Î\x99C0x\x8eT0Ëô\x99s\x9fH\x9b\x7f\x8a\x05Ó\x05;Eê4Ä')
+2026-01-16 15:31:34,172 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:31:34,174 [INFO] django.server: code 400, message Bad request version ('b2.w\x80â6\x04Ø0ÎÖ)\\\x15³sNQ2\x9aî5Z6µ\x87\x8a\x16RÒ\x18T®:~=«Ý')
+2026-01-16 15:31:34,174 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:14,753 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:32:17,334 [INFO] django.server: code 400, message Bad request version ('\x8e«Ø\x98\x82Ã(µ\x80\x07')
+2026-01-16 15:32:17,334 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:17,335 [INFO] django.server: code 400, message Bad request version ('ùt\\V¡\x1aV\x00ÐDèf%ó³`Á¹·×ôF±H,>\x9a\x91ÂÒºól®\x9bÁi\x8ek¸]\x16')
+2026-01-16 15:32:17,336 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:17,337 [INFO] django.server: code 400, message Bad request version ('É`\x07fÊíú\x12\x84ÏÏ<zY\x1at\x16')
+2026-01-16 15:32:17,338 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:17,339 [INFO] django.server: code 400, message Bad request version ("zûJ\xad'\x15¾õ\x9e\x97¯{_")
+2026-01-16 15:32:17,341 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,270 [INFO] django.server: code 400, message Bad request version ('Ô¶ì¸\x99©©6\x95WènÍøÝCï6Iîª?Xóôî\x9aÛ1\x9cZ£Ã\x8cf¬\x90q\x98Rè\x98£«:\x07$1cç%ÍTÝ\x95N~K%sûv\x97C')
+2026-01-16 15:32:18,270 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,271 [INFO] django.server: code 400, message Bad request version ('1¤+\x9c´\x94\x9a')
+2026-01-16 15:32:18,271 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,273 [INFO] django.server: code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+2026-01-16 15:32:18,274 [INFO] django.server: code 400, message Bad request version ('hm@=;')
+2026-01-16 15:32:18,274 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,274 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,616 [INFO] django.server: code 400, message Bad request version ('\x00\x02\x01\x00\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00')
+2026-01-16 15:32:18,617 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,617 [INFO] django.server: code 400, message Bad request version ('Âk\x8e\x888¨ù?áÓÏ¾E\x84Ó\x17Í')
+2026-01-16 15:32:18,618 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,620 [INFO] django.server: code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+2026-01-16 15:32:18,620 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,621 [INFO] django.server: code 400, message Bad request version ('H\x84·\x95Oî')
+2026-01-16 15:32:18,621 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,806 [INFO] django.server: code 400, message Bad request version ('[S\x17M\x7f¬\x8cðe\x13½\x14BÂ')
+2026-01-16 15:32:18,807 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,809 [INFO] django.server: code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-01-16 15:32:18,809 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,812 [INFO] django.server: code 400, message Bad request version ('fW×Ê\x172RÜ¢Ã~É¬\x94\x06f+KF\x00')
+2026-01-16 15:32:18,812 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,812 [INFO] django.server: code 400, message Bad request version ('\x14¼1ÐÒ\x86NviýàGh\x02ráê\x16\x05#«R\x81C')
+2026-01-16 15:32:18,814 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,814 [INFO] django.server: code 400, message Bad request version ('0aö\x15`Ü#Ý1½9f¾J')
+2026-01-16 15:32:18,815 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:18,817 [INFO] django.server: code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00#\x00\x00\x00')
+2026-01-16 15:32:18,817 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:20,348 [INFO] django.server: code 400, message Bad request version ('Òó;\x00\x89-4\x8fÏeã.l^Ê\x19Ùê¤1\x1b\x80?æPY\x8câ\x02ä¦o\x00')
+2026-01-16 15:32:20,348 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:20,351 [INFO] django.server: code 400, message Bad request version ("ÿä{<\x14./\x9a\x10=\xad9\x93h}9\x07ª8_gÛi¹»ß¸(ò\x99'\x16ùs\x15>Ú\x14,uõ}\x11Ç#;þ")
+2026-01-16 15:32:20,351 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:20,355 [INFO] django.server: code 400, message Bad request version ("\x00\x02\x01\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04ÀAÒ¬ô¸\x94pø`ñ¥²Ó\x175'")
+2026-01-16 15:32:20,355 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:20,357 [INFO] django.server: code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Ù')
+2026-01-16 15:32:20,357 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:20,358 [INFO] django.server: code 400, message Bad request version ('3{k\x7f\x12\x92MÞ[G³¦EìÑ\x8eÓ\x13-*Ùü^Ûêâ\x83\x19\x91\x00\x17\x00\x00\x00\x12\x00\x00\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04ÀKç5]P\x86²\x8b')
+2026-01-16 15:32:20,359 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:20,360 [INFO] django.server: code 400, message Bad request version ('!\x87y\x01¶Æ\x144!3èà:`Yg\x9f(\x1av\x99{\x9dTºs1w"f\x10óaÊáæ^RJ2Ì×J5Á±\x99ú\x03D\x06Npâ\x1bÌ\x82ÍTç8ÁH')
+2026-01-16 15:32:20,360 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:32:35,353 [WARNING] django.request: Not Found: /
+2026-01-16 15:32:35,354 [WARNING] django.server: "GET / HTTP/1.1" 404 17276
+2026-01-16 15:32:35,382 [INFO] django.server: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 30101
+2026-01-16 15:32:35,384 [INFO] django.server: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14879
+2026-01-16 15:32:35,387 [INFO] django.server: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+2026-01-16 15:32:35,443 [INFO] django.server: "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4700
+2026-01-16 15:32:35,559 [WARNING] django.request: Not Found: /favicon.ico
+2026-01-16 15:32:35,560 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 17338
+2026-01-16 15:32:53,904 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:32:53,920 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18851
+2026-01-16 15:32:54,242 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:32:54,258 [INFO] django.server: "GET /api/schema/ HTTP/1.1" 200 66343
+2026-01-16 15:33:36,496 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:33:43,168 [INFO] django.server: code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03÷\x94óáÊLÍ\x06:zÊsn7,éô`¢õ')
+2026-01-16 15:33:43,169 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:33:43,171 [INFO] django.server: code 400, message Bad request version ('6\\\x02\x99ÈÅZ¦`\x13°\x8d')
+2026-01-16 15:33:43,171 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:33:57,171 [INFO] django.server: code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03°¾Â\x92í')
+2026-01-16 15:33:57,171 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:33:57,174 [INFO] django.server: code 400, message Bad request version ('©p\x88\x14KB^°\x13I¨w\x9a\x19E\x0f!>F{\x03ÈêNXd\x92²G')
+2026-01-16 15:33:57,174 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:33:57,176 [INFO] django.server: code 400, message Bad request version ("¢s=\\\x97\x9cwæ¨odÈp\x92y#Ûw\x1aø\x8e'÷VTÐ_vye\x99¨Á¿¹{]")
+2026-01-16 15:33:57,177 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:33:57,179 [INFO] django.server: code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x035¤µ\x88Æð\x8d¾>Ì$T¿C°Ò\xad\x804âdè\xad\x8aU\x0e¹\x11SÑ\x94~')
+2026-01-16 15:33:57,179 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:34:01,394 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:34:01,422 [WARNING] django.request: Not Found: /
+2026-01-16 15:34:01,423 [WARNING] django.server: "GET / HTTP/1.1" 404 17276
+2026-01-16 15:34:06,853 [INFO] django.server: code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063jj\x00\x00\x00')
+2026-01-16 15:34:06,854 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:34:06,855 [INFO] django.server: code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÚÚ\x00\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00')
+2026-01-16 15:34:06,856 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:34:13,643 [INFO] django.server: code 400, message Bad request version ('\x0fS¹\x04ôí>\x94')
+2026-01-16 15:34:13,644 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:34:13,646 [INFO] django.server: code 400, message Bad request version ('Âô\x1bç¿Q0"¢Ôv\x00')
+2026-01-16 15:34:13,646 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:34:22,357 [INFO] django.server: code 400, message Bad request version ('\x01£\x15')
+2026-01-16 15:34:22,358 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:34:22,359 [INFO] django.server: code 400, message Bad request version ('=Jc\xadÎå')
+2026-01-16 15:34:22,360 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:37:21,182 [INFO] django.server: code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00')
+2026-01-16 15:37:21,183 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:37:21,185 [INFO] django.server: code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+2026-01-16 15:37:21,186 [ERROR] django.server: You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-01-16 15:44:40,249 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 15:49:10,474 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:49:22,705 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:49:22,738 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18851
+2026-01-16 15:49:23,056 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:49:23,074 [INFO] django.server: "GET /api/schema/ HTTP/1.1" 200 66343
+2026-01-16 15:49:29,238 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:49:29,255 [WARNING] django.request: Unauthorized: /api/orders/
+2026-01-16 15:49:29,256 [WARNING] django.server: "GET /api/orders/ HTTP/1.1" 401 134
+2026-01-16 15:49:29,479 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=c932695b9e074619bb57eabc77958049 HTTP/1.1" 200 10527
+2026-01-16 15:49:48,651 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:49:48,666 [WARNING] django.request: Not Found: /api/products/4/
+2026-01-16 15:49:48,666 [WARNING] django.server: "GET /api/products/4/ HTTP/1.1" 404 94
+2026-01-16 15:49:48,890 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=02d58bf08cc24aafa05a83fd84703863 HTTP/1.1" 200 10529
+2026-01-16 15:50:09,925 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:50:09,942 [WARNING] django.request: Unauthorized: /api/products/
+2026-01-16 15:50:09,943 [WARNING] django.server: "POST /api/products/ HTTP/1.1" 401 134
+2026-01-16 15:50:10,169 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=0111cab80249486f9e6e876fdb3d6d94 HTTP/1.1" 200 10531
+2026-01-16 15:50:45,809 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/product/exceptions.py changed, reloading.
+2026-01-16 15:50:46,538 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:50:49,793 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:50:49,823 [WARNING] django.request: Unauthorized: /api/products/
+2026-01-16 15:50:49,824 [WARNING] django.server: "POST /api/products/ HTTP/1.1" 401 134
+2026-01-16 15:50:50,040 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=7633addcd7f5409eb461e8b96f9fd6b1 HTTP/1.1" 200 10531
+2026-01-16 15:51:07,464 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 15:51:07,480 [WARNING] django.request: Not Found: /api/products/4/
+2026-01-16 15:51:07,481 [WARNING] django.server: "GET /api/products/4/ HTTP/1.1" 404 94
+2026-01-16 15:51:07,698 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=2541bea5410e43d6be756b0527d07986 HTTP/1.1" 200 10531
+2026-01-16 15:56:13,007 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 15:56:13,737 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:57:05,896 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 15:57:06,632 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:57:08,170 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/product/views.py changed, reloading.
+2026-01-16 15:57:08,950 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 15:59:30,882 [WARNING] django.request: Bad Request: /api/orders/373068c3-9a22-4d81-b698-ed1fe1437650/cancel/
+2026-01-16 15:59:33,758 [WARNING] django.request: Bad Request: /api/orders/
+2026-01-16 15:59:39,627 [WARNING] django.request: Unauthorized: /api/orders/
+2026-01-16 15:59:40,393 [WARNING] django.request: Bad Request: /api/orders/c30b6c36-f7bd-4f10-aa00-3b394d97db4b/pay/
+2026-01-16 15:59:49,851 [WARNING] django.request: Not Found: /api/orders/65940e44-2d30-4d04-9e88-24b6ef4419d2/cancel/
+2026-01-16 15:59:51,929 [WARNING] django.request: Not Found: /api/orders/c2934753-cf99-487c-9384-e3aa7e592a5f/
+2026-01-16 16:01:04,618 [WARNING] django.request: Bad Request: /api/orders/207a326c-7b59-472c-9131-6018eb1ad61a/cancel/
+2026-01-16 16:01:07,399 [WARNING] django.request: Bad Request: /api/orders/
+2026-01-16 16:01:13,029 [WARNING] django.request: Unauthorized: /api/orders/
+2026-01-16 16:01:13,752 [WARNING] django.request: Bad Request: /api/orders/df08c496-9ee4-44f8-bda4-fe34510768fb/pay/
+2026-01-16 16:01:23,080 [WARNING] django.request: Not Found: /api/orders/4995dbff-a83d-44ac-894c-80349b02f462/cancel/
+2026-01-16 16:01:25,179 [WARNING] django.request: Not Found: /api/orders/439de3c7-ef7a-47f7-b23f-48713c6416e8/
+2026-01-16 16:03:37,467 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 16:03:38,504 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 16:06:00,584 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/product/serializers.py changed, reloading.
+2026-01-16 16:06:01,378 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 16:06:02,925 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/config/settings.py changed, reloading.
+2026-01-16 16:06:03,646 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 16:06:05,232 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/product/views.py changed, reloading.
+2026-01-16 16:06:05,978 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 16:13:20,698 [INFO] django.utils.autoreload: /home/jemshit/Desktop/ShopCore/config/product/serializers.py changed, reloading.
+2026-01-16 16:13:21,449 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 16:13:53,706 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-01-16 16:14:00,624 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:00,654 [INFO] django.server: "GET /api/docs/ HTTP/1.1" 200 18851
+2026-01-16 16:14:01,164 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:01,178 [INFO] django.server: "GET /api/schema/ HTTP/1.1" 200 66343
+2026-01-16 16:14:11,296 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:11,310 [WARNING] django.request: Unauthorized: /api/products/
+2026-01-16 16:14:11,311 [WARNING] django.server: "POST /api/products/ HTTP/1.1" 401 134
+2026-01-16 16:14:11,535 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=5304672e49434453b0d191851e8a94cd HTTP/1.1" 200 10531
+2026-01-16 16:14:14,643 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:14,661 [WARNING] django.request: Unauthorized: /api/products/
+2026-01-16 16:14:14,662 [WARNING] django.server: "POST /api/products/ HTTP/1.1" 401 134
+2026-01-16 16:14:14,876 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=9ffc235c7d50486ea9388ce6656da6a0 HTTP/1.1" 200 10531
+2026-01-16 16:14:27,733 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:27,752 [WARNING] django.request: Unauthorized: /api/cart-items/
+2026-01-16 16:14:27,752 [WARNING] django.server: "GET /api/cart-items/ HTTP/1.1" 401 134
+2026-01-16 16:14:27,976 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=bc000915ee9445e08e5982ce97395fb5 HTTP/1.1" 200 10534
+2026-01-16 16:14:29,115 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:29,129 [WARNING] django.request: Unauthorized: /api/cart-items/
+2026-01-16 16:14:29,130 [WARNING] django.server: "GET /api/cart-items/ HTTP/1.1" 401 134
+2026-01-16 16:14:29,346 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=ffcbddf1cae44244b220c09e4bbe822c HTTP/1.1" 200 10534
+2026-01-16 16:14:42,794 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:42,816 [WARNING] django.request: Unauthorized: /api/carts/
+2026-01-16 16:14:42,817 [WARNING] django.server: "GET /api/carts/ HTTP/1.1" 401 134
+2026-01-16 16:14:43,036 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=8d2aad2c4dd14c8e943e2c08e26ae0b5 HTTP/1.1" 200 10525
+2026-01-16 16:14:44,024 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:44,044 [WARNING] django.request: Unauthorized: /api/carts/
+2026-01-16 16:14:44,044 [WARNING] django.server: "GET /api/carts/ HTTP/1.1" 401 134
+2026-01-16 16:14:44,259 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=1b00f966a5864181badd90c43adea75f HTTP/1.1" 200 10525
+2026-01-16 16:14:46,254 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:46,276 [WARNING] django.request: Unauthorized: /api/carts/
+2026-01-16 16:14:46,277 [WARNING] django.server: "GET /api/carts/ HTTP/1.1" 401 134
+2026-01-16 16:14:46,493 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=5ed05e5548714455bede330a217cc54a HTTP/1.1" 200 10525
+2026-01-16 16:14:46,660 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:46,674 [WARNING] django.request: Unauthorized: /api/carts/
+2026-01-16 16:14:46,674 [WARNING] django.server: "GET /api/carts/ HTTP/1.1" 401 134
+2026-01-16 16:14:46,889 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=f1215c3c091c4e65bc0b37ee694da046 HTTP/1.1" 200 10525
+2026-01-16 16:14:53,007 [WARNING] django.security.SuspiciousSession: Session data corrupted
+2026-01-16 16:14:53,027 [WARNING] django.request: Unauthorized: /api/carts/4/
+2026-01-16 16:14:53,027 [WARNING] django.server: "GET /api/carts/4/ HTTP/1.1" 401 134
+2026-01-16 16:14:53,244 [INFO] django.server: "GET /__debug_toolbar/history_sidebar/?request_id=5c0a4ca1a9f449f58e16baa66fc38613 HTTP/1.1" 200 10527

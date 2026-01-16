@@ -12,8 +12,6 @@ class IsAdminOrOwner(BasePermission):
     """Admin tüm siparişleri görebilir, user sadece kendi siparişlerini görebilir"""
     
     def has_object_permission(self, request, view, obj):
-        # Admin tüm siparişleri görebilir
         if request.user and request.user.is_staff:
             return True
-        # User sadece kendi siparişlerini görebilir
         return obj.user == request.user

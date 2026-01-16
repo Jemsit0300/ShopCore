@@ -1,15 +1,31 @@
 from pathlib import Path
 from datetime import timedelta
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+def get_env(name: str, default: str | None = None, required: bool = False) -> str | None:
+    """Read environment variable, optionally enforce existence."""
+    value = os.getenv(name, default)
+    if required and (value is None or value == ""):
+        raise RuntimeError(f"{name} environment variable is required")
+    return value
 
-SECRET_KEY = 'django-insecure-@rs1$)refajizup==*oib3rgc-j=h=b*yhonk4lrdwhrz0d!4&'
 
-DEBUG = True
+SECRET_KEY = get_env("SECRET_KEY", required=True)
 
-ALLOWED_HOSTS = []
+DEBUG = get_env("DEBUG", "False") == "True"
+
+
+ALLOWED_HOSTS = [host for host in get_env("ALLOWED_HOSTS", "").split(",") if host]
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -26,19 +42,25 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'django_filters',
-    'debug_toolbar',
+    'corsheaders',
 ]
 
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+if DEBUG:
+    MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
 
 ROOT_URLCONF = 'config.urls'
 
@@ -106,38 +128,22 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
-
-    #DRF Spectacular
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-
-    #Pagination
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10,
-
-    #Searching and Filtering
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
-        
     'DEFAULT_THROTTLE_CLASSES': [
         'product.throttles.UserThrottle',
         'product.throttles.AnonThrottle',
     ],
-
     'DEFAULT_THROTTLE_RATES': {
-        # Genel
         'user': '500/day',
         'anon': '100/day',
-
-        # Order
         'order_user': '20/day',
         'order_anon': '5/day',
-
-        # Payment
         'payment_user': '5/hour',
     },
-
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 10,
+    'EXCEPTION_HANDLER': 'product.exceptions.custom_exception_handler',
 }
 
 SPECTACULAR_SETTINGS  ={
@@ -164,3 +170,70 @@ CACHES = {
         'LOCATION': 'product-cache',
     }
 }
+
+CORS_ALLOWED_ORIGINS = [origin for origin in get_env("CORS_ALLOWED_ORIGINS", "").split(",") if origin]
+
+CORS_ALLOW_CREDENTIALS = True
+
+
+if not DEBUG and not ALLOWED_HOSTS:
+    raise RuntimeError("ALLOWED_HOSTS must be set when DEBUG=False")
+
+
+LOG_DIR = BASE_DIR / "logs"
+LOG_DIR.mkdir(exist_ok=True)
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        },
+        "simple": {
+            "format": "%(levelname)s %(message)s",
+        },
+    },
+    "handlers": {
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "simple",
+        },
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": LOG_DIR / "app.log",
+            "formatter": "verbose",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console", "file"],
+            "level": "INFO",
+            "propagate": True,
+        },
+    },
+}
+
+
+if DEBUG:
+    SECURE_SSL_REDIRECT = False
+    SECURE_HSTS_SECONDS = 0
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False
+else:
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
+
+    X_FRAME_OPTIONS = "DENY"
+
+    SECURE_HSTS_SECONDS = 31536000
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    SECURE_SSL_REDIRECT = True
+
+
